@@ -1,0 +1,18 @@
+The solution involves understanding and addressing the specificity conflict.  To ensure the `li` background-color takes precedence over the `ul` background-color, the specificity of the `li` selector should be increased. Here is the improved code:
+
+```css
+ul {
+  background-color: lightgray;
+}
+
+li {
+  background-color: blue !important; 
+}
+
+li.special {
+  background-color: red;
+}
+
+```
+
+By adding `!important` to the `li` declaration, it overrides the `ul` rule.  This ensures the blue background-color is applied consistently.

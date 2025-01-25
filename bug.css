@@ -1,0 +1,16 @@
+The following CSS code snippet demonstrates an uncommon error related to specificity and inheritance.  The intention is to style all list items in the unordered list with a blue background. However, the styling is not applied as expected due to specificity issues. 
+
+```css
+ul {
+  background-color: lightgray;
+}
+
+li {
+  background-color: blue;
+}
+
+li.special {
+  background-color: red;
+}
+
+```
